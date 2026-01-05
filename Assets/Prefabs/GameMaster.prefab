@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &357700109239233463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 357700109239233461}
+  - component: {fileID: 357700109239233462}
+  - component: {fileID: 1424895602}
+  - component: {fileID: 1424895604}
+  - component: {fileID: 1424895605}
+  m_Layer: 0
+  m_Name: GameMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &357700109239233461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357700109239233463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &357700109239233462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357700109239233463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c103574bbb9a8ae43aae2da90e8a82df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstaclesInPlay: []
+  playerObj: {fileID: 0}
+  uIManager: {fileID: 0}
+  spawner: {fileID: 0}
+  distanceSpeedMultiplyer: 3
+  globalObstacleSpeed: 32
+  isAlive: 1
+  camPos: {x: 0, y: 0, z: 0}
+  distanceTarget: 125
+  increaseTargetBy: 64
+  minObstacleSpeed: 20
+  maxTimeToSpawn: 0.9
+  maxObstacleSpeed: 32
+  minTimeToSpawn: 0.35
+  deaths: 0
+  deathsBeforeAd: 3
+  maxSpeedFromStart_DevTool: 0
+--- !u!114 &1424895602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357700109239233463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13491a4488171ef48ac569d7f7984b0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledAsteroidObjects: []
+  pooledAsteroidTwoObjects: []
+  pooledIceBlockObjects: []
+  pooledLaserObjects: []
+  Asteroid_objectToPool: {fileID: 3168803212702927600, guid: 2decdc98b719d5440b6cff78d96bf064, type: 3}
+  Asteroid2_objectToPool: {fileID: 3168803212702927600, guid: 333ffcd5ddfd94a47be71bc42d0dce1f, type: 3}
+  IceBlock_objectToPool: {fileID: 7742176657340870316, guid: bd9a25d986e8ffa44a53769a58add10c, type: 3}
+  Lasers_objectToPool: {fileID: 6647399561037066829, guid: 010cdb760a898bd47af99e66126ddd5a, type: 3}
+  amountToPool_Asteroid: 5
+  amountToPool_Asteroid2: 5
+  amountToPool_IceBlock: 5
+  amountToPool_lasers: 9
+--- !u!114 &1424895604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357700109239233463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 654f330c1e6da1c43b2674f880edbc82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1424895605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357700109239233463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da2f65f962439c4f801c0f26d0199b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
